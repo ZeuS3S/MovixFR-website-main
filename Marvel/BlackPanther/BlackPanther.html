@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="BlackPanther.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Panther</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle">
+            <a href="../../index.html"><img src="toggle.png" alt=""></a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Black Panther</span></h2>
+            <p>
+                Après les événements qui se sont déroulés dans Captain America : Civil War, T'Challa revient chez lui prendre sa place sur le trône du Wakanda, une nation africaine technologiquement très avancée mais lorsqu'un vieil ennemi resurgit, le courage de T'Challa
+                est mis à rude épreuve, aussi bien en tant que souverain qu'en tant que Black Panther. Il se retrouve entraîné dans un conflit qui menace non seulement le destin du Wakanda mais celui du monde entier.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Regardez !</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <IFRAME SRC="https://uqload.com/embed-if08dwhufb2g.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

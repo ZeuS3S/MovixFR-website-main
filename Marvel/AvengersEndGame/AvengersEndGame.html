@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers End Game</title>
+
+    <link rel="stylesheet" href="AvengersEndGame.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle">
+            <a href="../../index.html"><img src="toggle.png" alt=""></a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Avengers <span>End Game</span> </h2>
+            <p>
+                Le Titan Thanos, ayant réussi à s'approprier les six Pierres d'Infinité et à les réunir sur le Gantelet doré, a pu réaliser son objectif de pulvériser la moitié de la population de l'Univers. Cinq ans plus tard, Scott Lang, alias Ant-Man, parvient à s'échapper
+                de la dimension subatomique où il était coincé. Il propose aux Avengers une solution pour faire revenir à la vie tous les êtres disparus, dont leurs alliés et coéquipiers : récupérer les Pierres d'Infinité dans le passé.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Regardez !</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <IFRAME SRC="https://uqload.com/embed-y0omg8hx9b3b.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+
+
+
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

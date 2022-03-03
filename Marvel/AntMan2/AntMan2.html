@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="AvengersInfinityWar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant-Man 2</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle">
+            <a href="../../index.html"><img src="toggle.png" alt=""></a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Ant-Man 2</span></h2>
+            <p>
+                Après les événements survenus dans Captain America, Civil War, Scott Lang a bien du mal à concilier sa vie de super-héros et ses responsabilités de père. Cependant, ses réflexions sur les conséquences de ses choix tournent court lorsque Hope van Dyne
+                et le Dr Hank Pym lui confient une nouvelle mission urgente. Scott va devoir renfiler son costume et apprendre à se battre aux côtés de La Guêpe afin de faire la lumière sur des secrets enfouis de longue date.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Regardez !</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <IFRAME SRC="https://uqload.com/embed-mnrewrbgiwcb.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

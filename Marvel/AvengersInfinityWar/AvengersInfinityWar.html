@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="AvengersInfinityWar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: Infinity War</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle">
+            <a href="../../index.html"><img src="toggle.png" alt=""></a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Avengers Infinity War</span></h2>
+            <p>
+                Alors que les Avengers et leurs alliés ont continué de protéger le monde face à des menaces bien trop grandes pour être combattues par un héros seul, un nouveau danger est venu de l'espace : Thanos. Despote craint dans tout l'univers, Thanos a pour objectif
+                de recueillir les six Pierres d'Infinité, des artefacts parmi les plus puissants de l'univers, et de les utiliser afin d'imposer sa volonté sur toute la réalité. Tous les combats que les Avengers ont menés culminent dans cette bataille.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Regardez !</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <IFRAME SRC="https://uqload.com/embed-b2p0lhh9gjfk.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>

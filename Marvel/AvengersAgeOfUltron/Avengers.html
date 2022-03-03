@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="AvengersInfinityWar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers: Age Of Ultron</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="logo.png" alt=""></a>
+        <div class="toggle">
+            <a href="../../index.html"><img src="toggle.png" alt=""></a>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2><span>Avengers Age Of Ultron</span></h2>
+            <p>
+                Alors qu'il tente de récupérer le sceptre de Loki avec l'aide de ses camarades Avengers, Tony Stark découvre que Strucker avait mis au point une intelligence artificielle révolutionnaire, plus puissante encore que Jarvis. Strucker, mis hors d'état de
+                nuire, et le sceptre récupéré, Stark conçoit bientôt un projet insensé : relancer son programme de maintien de la paix, jusque-là en sommeil, grâce à cette conscience robotisée ultra-puissante.
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">Regardez !</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <IFRAME SRC="https://uqload.com/embed-flywfq6xaz89.html" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360 allowfullscreen></IFRAME>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            let video = document.querySelector('.video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+
+</html>
